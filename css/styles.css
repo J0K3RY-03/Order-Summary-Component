@@ -92,6 +92,7 @@ section {
 }
 
 .plan-container a {
+  color: var(--bright-blue);
   font-weight: 700;
   place-self: center;
   margin-right: 0.5rem;
