@@ -1,0 +1,161 @@
+:root {
+  /* primary */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* neutral */
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  /* font */
+  --fontpolice: "Red Hat Display", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--fontpolice);
+  background: url(../images/pattern-background-desktop.svg), var(--pale-blue);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* utils */
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--desaturated-blue);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+.btn-bgcolor {
+  background: var(--bright-blue);
+}
+
+/* general */
+
+.container {
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  text-align: center;
+}
+section {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 10px 15px hsla(224, 23%, 55%, 0.3);
+}
+
+.content {
+  padding: 2rem;
+}
+
+.content p {
+  margin-bottom: 1.5rem;
+}
+
+.header-img img {
+  width: 100%;
+  display: block;
+}
+
+.plan-container {
+  display: grid;
+  grid-template-columns: auto auto 80px;
+  grid-template-rows: 1fr;
+  border-radius: 10px;
+  padding: 1rem 0 1rem 0;
+  margin-bottom: 2rem;
+  background: var(--very-pale-blue);
+}
+
+.plan-container a {
+  font-weight: 700;
+  place-self: center;
+  margin-right: 0.5rem;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+.plan-container a:hover {
+  opacity: 0.5;
+}
+
+.plan-container img {
+  place-self: center;
+}
+
+.tarif-plan {
+  justify-self: start;
+  align-self: center;
+}
+
+.tarif-plan p {
+  margin-bottom: 0;
+}
+
+.tarif-plan h2 {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.button-container button:first-child {
+  color: var(--pale-blue);
+  font-family: var(--fontpolice);
+  padding: 0.8rem;
+  font-weight: 900;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 1rem;
+  box-shadow: 0px 10px 10px hsla(224, 23%, 55%, 0.3);
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+.button-container button:first-child:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.button-container button:last-child {
+  color: var(--desaturated-blue);
+  font-weight: 900;
+  font-size: 14px;
+  border: none;
+  background: none;
+  font-family: var(--fontpolice);
+}
+
+.button-container button:last-child:hover {
+  color: black;
+  cursor: pointer;
+}
